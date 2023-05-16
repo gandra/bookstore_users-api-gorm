@@ -1,4 +1,4 @@
-package users_db
+package conf_db
 
 import (
 	"fmt"

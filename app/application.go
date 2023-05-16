@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/gandra/bookstore/usersapigorm/datasources/postgresql/users_db"
+	"github.com/gandra/bookstore/usersapigorm/datasources/postgresql/conf_db"
 	"github.com/gandra/bookstore/usersapigorm/logger"
 	"github.com/gin-gonic/gin"
 )
@@ -11,7 +11,7 @@ var (
 )
 
 func StartApplication() {
-	users_db.InitDatabase()
+	conf_db.InitDatabase()
 	mapUrls()
 
 	logger.Info("about to start application...")
